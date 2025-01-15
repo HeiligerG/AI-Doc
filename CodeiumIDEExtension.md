@@ -1,70 +1,70 @@
-# Codeium in JetBrains IDE verwenden
+# Codeium: KI-gestützte Entwicklung in JetBrains IDEs
 
-Codeium ist ein Open-Source-Tool für KI-gestützte Codevervollständigung und -generierung, das sich in JetBrains IDEs integrieren lässt. Es hilft Entwicklern, effizienter zu arbeiten, indem es intelligente Vorschläge direkt in der IDE liefert.
+Codeium bietet leistungsstarke KI-gestützte Funktionen wie Codevervollständigung, -generierung und -refactoring. Hier erfährst du, wie du es optimal einrichten kannst, insbesondere durch die Konfiguration von Shortcuts.
 
-## Installation in JetBrains IDE
+---
 
-1. **Plugin-Installation**:
-   - Öffne deine JetBrains IDE (z. B. IntelliJ IDEA, PyCharm, WebStorm).
-   - Navigiere zu `File > Settings > Plugins` (oder `Preferences > Plugins` auf macOS).
-   - Suche nach dem Plugin `Codeium`.
-   - Klicke auf `Install`, um das Plugin herunterzuladen und zu installieren.
-   - Starte die IDE neu, um die Installation abzuschließen.
+## **Installation von Codeium**
+1. Öffne deine JetBrains IDE (z. B. IntelliJ IDEA, PyCharm, WebStorm).
+2. Gehe zu `File > Settings > Plugins` (oder `Preferences > Plugins` auf macOS).
+3. Suche nach `Codeium`.
+4. Installiere das Plugin und starte die IDE neu, um die Installation abzuschließen.
 
-2. **Account-Setup**:
-   - Nach der Installation öffnet sich ein Einrichtungsassistent.
-   - Melde dich mit deinem Codeium-Konto an oder registriere dich kostenlos.
-   - Gib die erforderlichen Berechtigungen, um auf deine Projekte zuzugreifen.
+---
 
-3. **Aktivierung**:
-   - Sobald das Plugin aktiviert ist, wird Codeium in deiner IDE angezeigt.
-   - Stelle sicher, dass die Integration in deinen bevorzugten Sprachen (z. B. Java, Python, JavaScript) aktiviert ist.
+## **Konfiguriere Shortcuts**
+Shortcuts sind eine schnelle Möglichkeit, um die Funktionen von Codeium effizient zu nutzen. So kannst du sie einrichten:
 
-## Verwendung von Codeium
+### **Shortcuts einrichten**
+1. Gehe zu `File > Settings > Keymap` (oder `Preferences > Keymap` auf macOS).
+2. Suche in der Suchleiste nach „Codeium“, um alle verfügbaren Befehle anzuzeigen.
+3. Weise folgenden Befehlen Shortcuts zu:
+   - **Vorschläge anzeigen**:
+     - Vorschlag: `Ctrl + Space` (oder `Cmd + Space` auf macOS).
+   - **Code generieren**:
+     - Vorschlag: `Ctrl + Shift + G` (oder `Cmd + Shift + G` auf macOS).
+   - **Akzeptiere Vorschlag**:
+     - Vorschlag: `Tab` oder ein anderer Shortcut, der für dich intuitiv ist.
+   - **Ignoriere Vorschlag**:
+     - Vorschlag: `Esc`.
 
-- **Codevervollständigung**:
-  - Beginne, Code zu schreiben, und Codeium schlägt automatisch passende Vervollständigungen vor.
-  - Drücke `Tab`, um einen Vorschlag zu akzeptieren, oder `Esc`, um ihn zu ignorieren.
+4. Speichere die Änderungen und teste die Shortcuts, indem du Code in deiner IDE bearbeitest.
 
-- **Code-Generierung**:
-  - Markiere eine Codezeile oder Funktion und wähle im Kontextmenü die Option „Mit Codeium generieren“.
-  - Alternativ kannst du mit einem Kommentar (`//`) eine Beschreibung schreiben, was du generieren möchtest, und Codeium erstellt den Code.
+---
 
-- **Refactoring**:
-  - Markiere den zu refaktorierenden Code und klicke auf das Codeium-Icon in der Seitenleiste.
-  - Wähle aus den Vorschlägen, um den Code effizienter oder lesbarer zu machen.
+## **Empfohlene Shortcuts für spezifische Szenarien**
+### Schneller Zugriff auf KI-Funktionen:
+- **Vorschläge für eine Methode generieren**:
+  - Schreibe eine Kommentarzeile, z. B.: `// Schreibe eine Funktion für...`
+  - Drücke `Ctrl + Shift + Space`, um Codeium den Vorschlag generieren zu lassen.
+  
+### Generierung beschleunigen:
+- Verwende `Ctrl + Enter`, um Codeium explizit zur Generierung basierend auf deinem Cursorinhalt aufzufordern.
 
-## Tipps und Tricks
+### Bearbeitung und Refactoring:
+- **Code verbessern oder refaktorisieren**:
+  - Markiere den Code.
+  - Drücke `Ctrl + Shift + Alt + R` für eine KI-gestützte Refactoring-Option.
 
-1. **Nutze Kommentar-Prompts**:
-   - Schreibe eine kurze Beschreibung in einem Kommentar, bevor du mit dem Code beginnst. Zum Beispiel:
+---
+
+## **Tipps für die Nutzung von Codeium**
+1. **Verwendung von Kommentaren als Prompts**:
+   - Schreibe präzise Beschreibungen in Kommentaren, um spezifische Vorschläge zu erhalten.
      ```java
-     // Schreibe eine Funktion, die eine Zahl auf ihre Primzahl prüft
+     // Erstelle eine Funktion, die die Fibonacci-Zahlen berechnet
      ```
-     Codeium generiert automatisch die passende Funktion.
+   - Drücke deinen Shortcut für „Vorschläge anzeigen“, um die generierte Funktion zu sehen.
 
-2. **Konfiguriere Shortcuts**:
-   - Gehe zu `File > Settings > Keymap`, um Shortcuts für Codeium-Befehle einzurichten, z. B. für „Vorschläge anzeigen“ oder „Code generieren“.
+2. **Anpassung der Shortcuts**:
+   - Wähle Shortcuts, die für deine Arbeitsweise und deinen Workflow am besten geeignet sind.
 
-3. **Anpassung der Vorschläge**:
-   - Unter `File > Settings > Codeium` kannst du die Art der Vorschläge anpassen (z. B. bevorzugte Codequalität, Tab vs. Leerzeichen, etc.).
+3. **Kollaborativer Modus**:
+   - Aktiviere den Teammodus, wenn du in größeren Projekten arbeitest, um konsistente Codevorschläge zu erhalten.
 
-4. **Offline-Modus aktivieren**:
-   - Für sensible Projekte kannst du Codeium im Offline-Modus betreiben, sodass keine Daten an externe Server gesendet werden.
+4. **Experimentiere mit Shortcut-Kombinationen**:
+   - Nutze Kombinationen wie `Ctrl + Alt + <Taste>` für seltener verwendete Funktionen.
 
-5. **Debugging-Hilfe**:
-   - Codeium kann Vorschläge für häufige Fehler in deinem Code machen. Füge dazu Kommentare wie `// Debug: Was ist hier falsch?` hinzu.
+---
 
-6. **Regelmäßige Updates**:
-   - Halte das Plugin auf dem neuesten Stand, um von den neuesten Funktionen und Verbesserungen zu profitieren.
-
-## Vorteile von Codeium in JetBrains IDEs
-
-- **Effizienzsteigerung**:
-  - Reduziert den Schreibaufwand durch intelligente Codevervollständigung.
-- **Bessere Codequalität**:
-  - Vorschläge basieren auf bewährten Praktiken.
-- **Zeitersparnis**:
-  - Generiert Boilerplate-Code und hilft bei komplexen Aufgaben.
-
-Mit Codeium kannst du deine Entwicklungsproduktivität deutlich steigern, während du in einer gewohnten Umgebung arbeitest!
+Mit diesen Einstellungen und Tipps kannst du Codeium optimal nutzen und deine Entwicklungsgeschwindigkeit erheblich steigern!
